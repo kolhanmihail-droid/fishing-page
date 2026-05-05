@@ -1,0 +1,92 @@
+/* Ustawienia dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8; 
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+/* Wygląd nagłówka */
+header {
+    background-color: #2c5e3b; 
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+/* Pojemnik, który ustawia kafelki obok siebie */
+.pojemnik-na-karty {
+    display: flex; /* Ustawia elementy w rzędzie */
+    justify-content: center; /* Wyśrodkowuje je */
+    gap: 30px; /* Robi odstęp między kafelkami */
+    padding: 20px;
+    flex-wrap: wrap; /* Pozwala im spaść jeden pod drugi na wąskim ekranie telefonu */
+}
+
+/* Wygląd pojedynczego kafelka */
+.karta {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px; /* Zaokrąglone rogi */
+    text-decoration: none; /* Usuwa podkreślenie linku */
+    color: #333; /* Ciemnoszary kolor tekstu */
+    border: 3px solid #2c5e3b; /* Zielona ramka */
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.1); /* Lekki cień */
+    transition: 0.3s; /* Płynna animacja przy najechaniu */
+}
+
+/* Efekt najechania myszką na kafelek */
+.karta:hover {
+    transform: translateY(-10px); /* Podnosi kafelek lekko do góry */
+    box-shadow: 0px 10px 20px rgba(0,0,0, 0.2); /* Powiększa cień */
+    background-color: #f1f8e9; /* Zmienia leciutko tło na bladozielone */
+}
+
+/* Wygląd stopki */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 200px;
+}
+
+/* Wygląd linku w TEKŚCIE (żeby nie psuło kafelków na stronie głównej) */
+.tresc-wyprawy a {
+    color: #2c5e3b; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.tresc-wyprawy a:hover {
+    text-decoration: underline; 
+}
+/* Styl dla tekstu o wyprawie */
+/* Styl dla tekstu o wyprawie */
+/* Profesjonalny styl dla tekstu o wyprawie (bez białej ramki) */
+.tresc-wyprawy {
+    text-align: left; 
+    max-width: 800px; 
+    margin: 50px 20px 50px 50px; /* 50px od góry, 20px z prawej, 50px od dołu, 50px z lewej */
+    padding: 0 20px; 
+    line-height: 1.8; 
+    font-size: 17px; 
+    color: #222; 
+}
+
+.galeria-wyprawy {
+    display: flex; /* Ustawia zdjęcia w rzędzie obok siebie */
+    gap: 15px; /* Robi ładne odstępy między zdjęciami */
+    margin-top: 30px; /* Odstęp od tekstu powyżej */
+    margin-bottom: 30px; /* Odstęp od linku poniżej */
+    flex-wrap: wrap; /* Jeśli ekran jest wąski, zdjęcia same ułożą się jedno pod drugim */
+}
+
+/* Wygląd pojedynczego zdjęcia w galerii */
+.galeria-wyprawy img {
+    max-width: 300px; /* Maksymalna szerokość zdjęcia */
+    height: auto; /* Zachowuje naturalne proporcje zdjęcia */
+    border-radius: 8px; /* Lekko zaokrągla rogi zdjęć (wygląda nowocześniej) */
+    box-shadow: 0px 4px 8px rgba(0,0,0, 0.15); /* Dodaje im delikatny cień */
+}
