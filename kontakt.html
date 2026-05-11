@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt-Moja Strona Wędkarska</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Napisz do mnie  </h1>
+        <p>Masz pytania lub chcesz się skontaktować?Daj mi znać!</p>
+    </header>
+
+    <div class ="pojemnik-wormularza" align="center">
+        <form action="#" method="post" class="formularz-wedkarski">
+            <label for="imie">Twoje imię:</label>
+            <input type="text", id="imie", name="imie",placeholder="Wpisz swoje imię" required>
+            <label for="email">Twój e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="jan@przyklad.pl" required>
+
+            <label for="temat">Temat (wybierz z listy):</label>
+            <select id="temat" name="temat">
+                <option value="wyprawy">Pytanie o łowisko</option>
+                <option value="porady">Porady i techniki</option>
+                <option value="inne">Inne</option>
+            </select>
+
+            <label for="wiadomosc">Treść wiadomości:</label>
+            <textarea id="wiadomosc" name="wiadomosc" rows="5" placeholder="Napisz tutaj co u Ciebie bierze..." required></textarea>
+
+            <button type="submit">Wyślij wiadomość</button>
+        </form>
+
+    </div>
+    <div style="margin-top: 30px;">
+        <a href="index.html" style="color: #2c5e3b; font-weight: bold; text-decoration: none; font-size: 18px;">⬅ Wróć do Strony Głównej</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Moja Strona Wędkarska.</p>
+    </footer>
+</body>
+</html>
